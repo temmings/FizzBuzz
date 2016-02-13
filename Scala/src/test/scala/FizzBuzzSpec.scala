@@ -12,7 +12,7 @@ class FizzBuzzSpec extends FunSpec {
       assert(FizzBuzz.eval(5) == "Buzz")
       assert(FizzBuzz.eval(10) == "Buzz")
     }
-    it("should return 'FizzBuzz' from a mulitple of three and five") {
+    it("should return 'FizzBuzz' from a multiple of three and five") {
       assert(FizzBuzz.eval(15) == "FizzBuzz")
       assert(FizzBuzz.eval(30) == "FizzBuzz")
     }
