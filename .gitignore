@@ -112,3 +112,24 @@ _testmain.go
 *.prof
 
 
+### https://raw.github.com/github/gitignore/c7557c59a576e676ce0e1423a6c09792b5c59e85/scala.gitignore
+
+*.class
+*.log
+
+# sbt specific
+.cache
+.history
+.lib/
+dist/*
+target/
+lib_managed/
+src_managed/
+project/boot/
+project/plugins/project/
+
+# Scala-IDE specific
+.scala_dependencies
+.worksheet
+
+
