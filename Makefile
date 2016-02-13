@@ -1,16 +1,9 @@
-test: test-py test-hs test-go test-scala
+SUBDIRS := Python Haskell Go Scala
+.PHONY: all $(SUBDIRS) clean
+all: $(SUBDIRS)
 
-test-py: *.py
-	python -m doctest $<
+$(SUBDIRS):
+	$(MAKE) -C $@ $(MAKECMDGOALS)
 
-test-hs:
-	cabal test
-
-test-go:
-	go test
-
-test-scala:
-	sbt test
-
-clean:
-	rm -f fizzbuzz *.pyc
+test: $(SUBDIRS)
+clean: $(SUBDIRS)

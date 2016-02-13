@@ -3,7 +3,7 @@ version:             0.1.0.0
 synopsis:            FizzBuzz
 homepage:            https://github.com/temmings/fizzbuzz/
 license:             BSD3
-license-file:        LICENSE
+license-file:        ../LICENSE
 author:              Tetsuya HAMAMOTO
 maintainer:          temmings@gmail.com
 category:            Sample Code
@@ -13,12 +13,12 @@ cabal-version:       >=1.10
 executable FizzBuzz
   main-is:             fizzbuzz.hs
   build-depends:       base >=4.8 && <4.9
-  hs-source-dirs:      src/main/haskell
+  hs-source-dirs:      .
   default-language:    Haskell2010
 
 test-suite doctests
   type:            exitcode-stdio-1.0
-  hs-source-dirs:  src/test/haskell
+  hs-source-dirs:  .
   main-is:         doctests.hs
   ghc-options:     -Wall -threaded
   build-depends:   base,
