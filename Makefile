@@ -3,8 +3,8 @@ test: test-py test-hs test-go
 test-py: *.py
 	python -m doctest $<
 
-test-hs: *.hs
-	doctest $<
+test-hs:
+	cabal test
 
 test-go:
 	go test
