@@ -1,4 +1,4 @@
-SUBDIRS := Python Haskell Go Scala
+SUBDIRS := Python Haskell Go Scala OCaml
 .PHONY: all $(SUBDIRS) clean
 all: $(SUBDIRS)
 

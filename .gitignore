@@ -133,3 +133,27 @@ project/plugins/project/
 .worksheet
 
 
+### https://raw.github.com/github/gitignore/c7557c59a576e676ce0e1423a6c09792b5c59e85/ocaml.gitignore
+
+*.annot
+*.cmo
+*.cma
+*.cmi
+*.a
+*.o
+*.cmx
+*.cmxs
+*.cmxa
+
+# ocamlbuild working directory
+_build/
+
+# ocamlbuild targets
+*.byte
+*.native
+
+# oasis generated files
+setup.data
+setup.log
+
+
